@@ -20,7 +20,7 @@ jobs:
         with:
           version: 0.5.18
       - name: Install dependencies
-        run: uv pip install pandoc
+        run: uv pip install --system pandoc
       - name: Build
         run: make build
       - name: Deploy
