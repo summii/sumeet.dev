@@ -22,7 +22,9 @@ jobs:
       - name: Set up Python virtual environment
         run: uv venv
       - name: Install dependencies
-        run: uv pip install
+        run: uv pip install --requirements requirements.txt
+      - name: Debug Installed Packages
+        run: uv pip list 
       - name: Build
         run: make build
       - name: Deploy
