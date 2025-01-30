@@ -13,9 +13,13 @@ jobs:
       deployments: write
     steps:
       - uses: actions/checkout@v4
+      - name: Install
       - uses: pandoc/actions/setup@v1
         with:
           version: 3.2.1
+      - name: Run pandoc
+        run: pandoc --version
+      - name: Install
       - uses: astral-sh/setup-uv@v5
         with:
           version: 0.5.18
