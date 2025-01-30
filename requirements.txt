@@ -1,3 +1,0 @@
-pandoc
-frontmatter
-uv
