@@ -1,0 +1,144 @@
+:root {
+    font-family: Roboto, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    background-color: #edf2f8;
+    color: #1a1b1e;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    max-width: 45rem;
+    margin: auto auto 4rem;
+    padding: 0 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    /* Creates an inline low-quality placeholder */
+    background-size: cover;
+    background-image: url("");
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+}
+
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #0066b2;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    line-height: 1.25;
+}
+
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+code {
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+/* Global convenience classes */
+.stretch {
+    width: 100%;
+}
+
+.svg {
+    filter: invert(1);
+}
+
+.center-self {
+    align-self: center;
+}
+
+.subtext {
+    color: #696969;
+    /* Reduce line height for consistent spacing. */
+    line-height: 1;
+}
+
+/* Nav bar styles */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem 0;
+    background-color: #edf2f8;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-title-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.nav-bar-title-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-bar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar-link {
+    font-size: 20px;
+}
+
+/* Setting the line-height to 0 here makes these links the same size as their content. */
+.nav-bar-social-link {
+    line-height: 0;
+}

@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sumeet.dev</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.jpg">
+    <link rel="stylesheet" href="/root.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="nav-bar-title-left">
+                <a class="nav-bar-title" href="/">sumeet.dev</a>
+                <a class="nav-bar-link" href="/blog/">Blog</a>
+                <a class="nav-bar-link" href="/projects/">Projects</a>
+            </div>
+            <div class="nav-bar-title-right">
+                <a class="nav-bar-social-link" href="https://github.com/summii" target="_blank"
+                    rel="noopener noreferrer"><img src="/github-logo.png" width="24" height="24" /></a>
+                <a class="nav-bar-social-link" href="https://www.linkedin.com/in/sumeetbhadana" target="_blank"
+                    rel="noopener noreferrer"><img src="/linkedin-logo.png" width="24" height="24" /></a>
+            </div>
+        </header>
+        <h1>{title}</h1>
+        <div class="subtext">{date}</div>
+        {content}
+    </main>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tomorrow-night-blue.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
