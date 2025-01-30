@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "frontmatter>=3.0.8",
+    "pandoc>=2.4",
+    "ruff>=0.9.3",
+]
