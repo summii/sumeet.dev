@@ -44,6 +44,45 @@ enc.decode([83, 1609, 5963, 374, 2294, 0])
 
 ![Tokenization](/blog/blog1.png)
 
+#### Pretraining
+Large Language Models (LLMs) are trained on vast amounts of data. `Training`, also called pretraining, is
+the process of teaching the network to recognize patterns in the input data. Essentially, we are taking large 
+chunks of internet text and compressing them into knobs the model can tune, known as weights and biases (
+collectively called parameters).
+
+#### Transformers
+It all started with [Attention is All you need](). It introduced the Transformer architecture, a more 
+efficient amd pwerful way of building language models.
+
+Before processing, words are converted into numerical vectors called embeddings. These embeddings capture
+semantic information, meaning that similar words are represented by similar vectors in a high dimensional
+space.
+
+Transformers use attention mechanisms, specifically self-attention. While attention had been used in previous
+models, it only read sequences word by word.Transformers can consider the entire input sequence at once. This 
+allows the model to focus on different parts of input when generating each part of the output, much like how human 
+understands language by considering the context of sequence or paragraph.
+
+For example, in the sentence "This cat sat on mat because it was tired", the word "it" refers to "cat". Self-attention
+helps the model establish this connection by assigning higher weights to related words, enabling it to understand
+that "it" refers to "cat" and not "mat".
+
+By utilizing self-attention, transformers can process entire sequences of data in parallel rather than one element
+at a time, making training faster and more efficient when leveraging GPUs.
+
+#### Fine-tuning
+After pretraining, the model may need to be adapted for specific tasks and fin-tuning is the process of adjusting a 
+pretrained model to have a specific output for your task. During fine-tuning models parameters - the weights and biases
+are adjusted slightly to improve performance.
+
+
+#### Inference
+
+After training and fine-tuning, the model is ready for inference - prcocess of making predictions or generating outputs
+from new inputs. During inference, the model applies what it learned to produce responses. Modern language models can 
+perform complex reasoning tasks using techniques like chain of thought. This involves the model generating intermediate
+reasoning steps before arriving at a final answer.
+
 Let's dive into some code using the OpenAI library and generate a response from a language model. 
 It creates a chat completion request with a question about the main characters of the Ramayana, using the GPT-3.5 model.
 
@@ -279,3 +318,4 @@ function arguments: {'location': 'New Delhi', 'date': '2025-02-09'}
 #### Conclusion
 
 LLMs are a powerful tool for natural language processing and can be applied in various ways, from text prediction to structured output generation. Experimenting with these models has given me a deeper understanding of their capabilities and how they can be integrated into real-world applications.
+
